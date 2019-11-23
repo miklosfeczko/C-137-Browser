@@ -1,0 +1,22 @@
+{
+  "name": "c137-browser",
+  "version": "1.0.0",
+  "description": "App made for coding garden project consuming the Rick and Morty API.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miklosfeczko/C-137-Browser.git"
+  },
+  "author": "Miklos Feczko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miklosfeczko/C-137-Browser/issues"
+  },
+  "homepage": "https://github.com/miklosfeczko/C-137-Browser#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
