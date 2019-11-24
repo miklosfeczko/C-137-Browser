@@ -1,5 +1,140 @@
+// GLOBALS
+// main colors
+$cosmicblue: #040919;
+$piggy: #eb4e7a;
+
 * {
-  margin: 0;
   padding: 0;
-  background: black;
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  box-sizing: inherit;
 }
+
+::-moz-selection { 
+  color: white;
+  background: $piggy;
+}
+
+::selection {
+  color: white;
+  background: $piggy;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll; // show scrollbar all the time to prevent content jumping issue!
+}
+
+// HOME SECTION
+.home {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ) center center no-repeat, #000 url("/images/bg.png") center center no-repeat;
+  background-size: cover, cover;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.titleContainer {
+  margin: 0vh auto 0;
+  padding-top: 30vh;
+  text-align: center;
+
+  .appName {
+    color: white;
+    //text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Megrim', cursive;
+    font-size: 2rem; // old: 3rem
+    letter-spacing: 1.3rem;
+    line-height: 1.3;
+    margin: 2rem 0 0;
+    opacity: 1;
+    text-transform: uppercase;
+  }
+
+  .greetingText {
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .codedBy {
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: .4rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    width: 200px;
+  }
+}
+
+.rightNav {
+  font-size: 1.3rem;
+  display: none;
+  letter-spacing: .5rem;
+  position: absolute;
+  right: 1.3rem;
+
+  ul {
+    list-style: none;
+    text-decoration: none;
+
+    li {
+        margin: 1rem 0;
+        writing-mode: vertical-rl;
+    }
+
+    a:hover, a:active {
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.selected {
+  color: #fff;
+}
+
+.leftNav {
+  color: white;
+  margin-top: 2rem;
+  //position: absolute;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 1.3rem;
+      letter-spacing: .5rem;
+      margin: 1rem 0;
+    }
+
+    a, a:visited, a:link, a:active {
+      text-decoration: none;
+      color: white;
+    }
+
+    li:hover {
+      color: #fff;
+    }
+  }
+}
+

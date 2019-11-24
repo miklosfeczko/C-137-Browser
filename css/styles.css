@@ -1,4 +1,96 @@
 * {
-  margin: 0;
   padding: 0;
-  background: black; }
+  margin: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+  box-sizing: inherit; }
+
+::-moz-selection {
+  color: white;
+  background: #eb4e7a; }
+
+::selection {
+  color: white;
+  background: #eb4e7a; }
+
+html {
+  height: 100%; }
+
+body {
+  overflow-y: scroll; }
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center no-repeat, #000 url("/images/bg.png") center center no-repeat;
+  background-size: cover, cover;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  width: 100%; }
+
+.title {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0; }
+
+.titleContainer {
+  margin: 0vh auto 0;
+  padding-top: 30vh;
+  text-align: center; }
+  .titleContainer .appName {
+    color: white;
+    font-family: 'Megrim', cursive;
+    font-size: 2rem;
+    letter-spacing: 1.3rem;
+    line-height: 1.3;
+    margin: 2rem 0 0;
+    opacity: 1;
+    text-transform: uppercase; }
+  .titleContainer .greetingText {
+    font-size: 1rem;
+    letter-spacing: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-transform: uppercase; }
+  .titleContainer .codedBy {
+    text-align: center;
+    font-size: .8rem;
+    letter-spacing: .4rem;
+    margin: 2rem auto;
+    text-transform: uppercase;
+    width: 200px; }
+
+.rightNav {
+  font-size: 1.3rem;
+  display: none;
+  letter-spacing: .5rem;
+  position: absolute;
+  right: 1.3rem; }
+  .rightNav ul {
+    list-style: none;
+    text-decoration: none; }
+    .rightNav ul li {
+      margin: 1rem 0;
+      writing-mode: vertical-rl; }
+    .rightNav ul a:hover, .rightNav ul a:active {
+      color: white; }
+    .rightNav ul a {
+      text-decoration: none;
+      color: white; }
+
+.selected {
+  color: #fff; }
+
+.leftNav {
+  color: white;
+  margin-top: 2rem; }
+  .leftNav ul {
+    list-style: none;
+    padding: 0; }
+    .leftNav ul li {
+      font-size: 1.3rem;
+      letter-spacing: .5rem;
+      margin: 1rem 0; }
+    .leftNav ul a, .leftNav ul a:visited, .leftNav ul a:link, .leftNav ul a:active {
+      text-decoration: none;
+      color: white; }
+    .leftNav ul li:hover {
+      color: #fff; }
