@@ -95,6 +95,58 @@ body {
     .leftNav ul li:hover {
       color: #fff; }
 
+.wrapper {
+  color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #040919; }
+
+.projectWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  flex-direction: column-reverse; }
+
+.imageWrapper {
+  width: 100%;
+  max-width: 50%;
+  flex: 1 1 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 4rem; }
+  .imageWrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0.8rem; }
+
+.projectDetails {
+  width: 100%;
+  max-width: 80%;
+  padding-bottom: 2rem;
+  flex: 1 1 80%; }
+  .projectDetails article h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+
+.techstackWrapper {
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-bottom: 1rem; }
+  .techstackWrapper img {
+    width: 4rem;
+    margin-right: 0.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    background-color: transparent; }
+
 @media only screen and (min-width: 700px) {
   .leftNav {
     left: 1rem;
@@ -119,7 +171,14 @@ body {
       width: 100%; }
   .rightNav {
     display: block;
-    top: 36vh; } }
+    top: 36vh; }
+  .projectDetails {
+    width: 100%;
+    max-width: 45%;
+    flex: 1 1 45%; }
+    .projectDetails article h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem; } }
 
 @media only screen and (min-width: 900px) {
   .leftNav {
