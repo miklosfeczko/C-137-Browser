@@ -94,3 +94,45 @@ body {
       color: white; }
     .leftNav ul li:hover {
       color: #fff; }
+
+@media only screen and (min-width: 700px) {
+  .leftNav {
+    left: 1rem;
+    position: absolute;
+    margin: 0;
+    top: 36vh; }
+    .leftNav li {
+      font-size: 1.3rem;
+      letter-spacing: .5rem;
+      margin: 1rem 0;
+      writing-mode: vertical-lr;
+      text-orientation: sideways; }
+  .titleContainer {
+    margin: 0vh auto 0;
+    padding-top: 35vh; }
+    .titleContainer .appName {
+      font-size: 4rem; }
+    .titleContainer .greetingText {
+      font-size: 1rem;
+      letter-spacing: 1.3rem; }
+    .titleContainer .codedBy {
+      width: 100%; }
+  .rightNav {
+    display: block;
+    top: 36vh; } }
+
+@media only screen and (min-width: 900px) {
+  .leftNav {
+    top: 34vh; }
+  .titleContainer {
+    margin: 0vh auto 0;
+    padding-top: 40vh; }
+    .titleContainer br {
+      display: none; }
+    .titleContainer .appName {
+      line-height: 1.5;
+      margin: 0; }
+    .titleContainer .codedBy {
+      margin: .5rem auto; }
+  .rightNav {
+    top: 34vh; } }
