@@ -19,7 +19,7 @@ body {
   overflow-y: scroll; }
 
 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center no-repeat, #000 url("/images/bg.png") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center center no-repeat, #000 url("../images/bg.png") center center no-repeat;
   background-size: cover, cover;
   height: 100vh;
   position: relative;
@@ -287,3 +287,9 @@ input {
       margin: .5rem auto; }
   .rightNav {
     top: 34vh; } }
+
+@media only screen and (max-width: 346px) {
+  input {
+    font-size: 1rem; }
+  .btn .im-magnifier {
+    font-size: 0.7rem; } }

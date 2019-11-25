@@ -33,7 +33,7 @@ body {
   background: linear-gradient(
       rgba(0, 0, 0, 0.50),
       rgba(0, 0, 0, 0.50)
-    ) center center no-repeat, #000 url("/images/bg.png") center center no-repeat;
+    ) center center no-repeat, #000 url('../images/bg.png') center center no-repeat;
   background-size: cover, cover;
   height: 100vh;
   position: relative;
@@ -387,5 +387,16 @@ input {
   }
   .rightNav {
     top: 34vh;
+  }
+}
+
+@media only screen and (max-width: 346px) { // search bar fix for smaller devices.
+  input {
+    font-size: 1rem;
+  }
+  .btn {
+  .im-magnifier {
+    font-size: 0.7rem;
+  }
   }
 }
