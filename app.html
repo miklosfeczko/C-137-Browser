@@ -24,7 +24,62 @@
       rel="stylesheet"
     />
   </head>
-<body>
-  
-</body>
+<body class="bodyApp">
+    
+    <div class="appTheme">
+      <nav class="leftNav respCenter">
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a href="./app.html"><li>Go to App</li></a>
+          </ul>
+        </nav>
+        <nav class="rightNav">
+          <ul>
+            <a
+              href="https://github.com/miklosfeczko"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li class="selected">GitHub</li>
+            </a>
+            <a href="#about"><li>About</li></a>
+          </ul>
+        </nav>
+    
+      <div class="searchbarContainer">
+      <form>    
+          <input
+            spellcheck="false"
+            autocomplete="off"
+            type="text"
+            class="form-control"
+            id="searchTerm"
+            placeholder="Rick"
+          />      
+        <button type="submit" class="btn" aria-label="search button">
+          <i class="im im-magnifier"></i>
+        </button>
+      </form>
+      </div>
+     
+       <section class="page">
+          <h3>Current Page</h3>
+          <p class="text-center" id="probatext">- / -</p>       
+          <button type="submit" class="btn paging" id="paging2">PREVIOUS</button>
+          <button type="submit" class="btn paging" id="paging">NEXT PAGE</button>
+        </section>
+        
+        <section class="mainContainer" id="results">
+        </section>
+        
+    </main>
+    </div>
+
+    <footer id="footer">
+        <p>Made with ❤️ by Miklos Feczko</p>  
+    </footer>
+
+
+    <script src="./JS/app.js" charset="utf-8"></script>
+  </body>
 </html>

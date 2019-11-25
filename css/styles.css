@@ -147,6 +147,98 @@ body {
     object-fit: cover;
     background-color: transparent; }
 
+.bodyApp {
+  background-color: #040919;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.appTheme {
+  background-color: #040919;
+  color: white;
+  flex: 1; }
+
+.mainContainer {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
+  justify-content: center;
+  margin: auto;
+  padding-left: 1rem; }
+
+.card {
+  width: 10rem;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  overflow: hidden; }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+    object-fit: cover; }
+
+form {
+  position: relative;
+  color: white;
+  background-color: #040919;
+  border: 1px solid white;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 0.6rem 3rem;
+  border-radius: 5rem;
+  line-height: 1;
+  font-weight: 500;
+  width: auto; }
+
+input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem; }
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none; }
+  .btn .im-magnifier {
+    font-size: 1rem; }
+
+.searchbarContainer {
+  position: relative;
+  text-align: center;
+  margin: 1rem; }
+
+.respCenter {
+  text-align: center; }
+
+.page {
+  text-align: center;
+  margin-bottom: 1rem; }
+  .page .paging {
+    border: 1px solid transparent;
+    color: white;
+    background-color: #eb4e7a;
+    padding: 1rem;
+    margin: 1rem;
+    transition: .5s; }
+    .page .paging:hover {
+      background-color: #040919;
+      border: 1px solid #eb4e7a;
+      transition: .5s; }
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  max-width: 39rem;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  vertical-align: top;
+  text-align: center; }
+  #footer p {
+    font-size: 1rem; }
+
 @media only screen and (min-width: 700px) {
   .leftNav {
     left: 1rem;

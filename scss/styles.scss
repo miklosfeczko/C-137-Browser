@@ -200,6 +200,119 @@ body {
     }
 }
 
+// APP.HTML STYLING
+.bodyApp {
+  background-color: $cosmicblue;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.appTheme {
+  background-color: $cosmicblue;
+  color: white;
+  flex: 1;
+}
+
+.mainContainer {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 11rem));
+    justify-content: center;
+    margin: auto;
+    padding-left: 1rem;
+    //background-color: yellow;
+}
+
+.card {
+    width: 10rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    //background-color: red;
+    img {
+        width: 100%; // 100%
+        height: auto; // old - auto
+        border-radius: 9px;
+        object-fit: cover;
+    }
+}
+
+form  {
+position: relative;
+color: white;
+background-color: $cosmicblue;
+border: 1px solid white;
+display: inline-block;
+justify-content: space-around;
+padding: 0.6rem 3rem;
+border-radius: 5rem;
+line-height: 1;
+font-weight: 500;
+width: auto;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border: none;
+  //padding: 0.25rem 0.5rem;
+  .im-magnifier {
+    font-size: 1rem;
+  }
+}
+
+.searchbarContainer {
+    position: relative;
+    //margin: auto;
+    text-align: center;
+    margin: 1rem;
+}
+
+.respCenter { // to align items to the center when media q. gets applied
+  text-align: center;
+}
+
+.page {
+  text-align: center;
+   .paging {
+    border: 1px solid transparent;
+    color: white;
+    background-color: #eb4e7a;
+    padding: 1rem;
+    margin: 1rem;
+    transition: .5s;
+    &:hover {
+      background-color: $cosmicblue;
+      border: 1px solid #eb4e7a;
+      transition: .5s;
+    }
+  }
+  margin-bottom: 1rem;
+}
+
+#footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  max-width: 39rem;
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  vertical-align: top;
+  text-align: center;
+  p {
+    font-size: 1rem;
+  }
+}
+
 // MEDIA QUERIES
 @media only screen and (min-width: 700px) {
   .leftNav {
