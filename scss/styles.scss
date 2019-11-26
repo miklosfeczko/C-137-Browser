@@ -361,6 +361,10 @@ input {
 
 // MEDIA QUERIES
 @media only screen and (min-width: 700px) {
+  .mainContainer {
+    max-width: 700px;
+  }
+  
   .leftNav {
     left: 1rem;
     position: absolute;
@@ -410,6 +414,12 @@ input {
   }
 }
 
+@media only screen and (min-width: 800px) {
+   .mainContainer {
+    max-width: 800px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .leftNav {
     top: 34vh;
@@ -433,6 +443,21 @@ input {
   }
   .rightNav {
     top: 34vh;
+  }
+  .mainContainer {
+    max-width: 850px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .mainContainer {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mainContainer {
+    max-width: 1100px;
   }
 }
 
