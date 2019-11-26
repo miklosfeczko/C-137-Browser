@@ -19,9 +19,11 @@ backButton.addEventListener("click", backPage);
 let pages = 1;
 let currentPage = 1;
 let searchParam;
+let loader = `<div class="lds-ripple"><div></div><div></div></div>`;
 
 async function formSubmitted(e) {
   e.preventDefault();
+  document.getElementById("results").innerHTML = loader;
   searchParam = input.value;
   try {
     const results = await getResults();
@@ -47,7 +49,9 @@ async function getResults() {
 
 async function nextPage(e) {
   e.preventDefault();
+  
   if (pages !== currentPage) {
+    document.getElementById("results").innerHTML = loader;
     currentPage = currentPage + 1;
     const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
     const response = await fetch(URL);
@@ -56,8 +60,7 @@ async function nextPage(e) {
       throw new Error(data.error);
     }
     const results = data.results;
-    document.getElementById("probatext").textContent =
-    currentPage + "/" + pages;
+    document.getElementById("probatext").textContent = currentPage + "/" + pages;
     showResults(results);
   } else return
 }
@@ -65,7 +68,7 @@ async function nextPage(e) {
 async function backPage(e) {
   e.preventDefault();
   if (currentPage > 1 ) {
-    currentPage = currentPage - 1;
+     currentPage = currentPage - 1;
      const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
      const response = await fetch(URL);
      const data = await response.json();
@@ -73,8 +76,7 @@ async function backPage(e) {
        throw new Error(data.error);
      }
      const results = data.results;
-     document.getElementById("probatext").textContent =
-     currentPage + "/" + pages;
+     document.getElementById("probatext").textContent = currentPage + "/" + pages;
      showResults(results);
   } else return
 }
@@ -88,7 +90,7 @@ function showResults(results) {
     <div class="card">
       <img src="${character.image}" alt="${character.name}">
       <div class="card-body">
-        <h5 class="card-title">${character.name}</h5>
+        <h4 class="card-title">${character.name}</h4>
         <p class="card-text"><span class="card-text-alt">Location: </span>${character.location.name}</p>
         <p class="card-text"><span class="card-text-alt">Race: </span>${character.species}</p>
         <p class="card-text"><span class="card-text-alt">Status: </span>${character.status}</p>
