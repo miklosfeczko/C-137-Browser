@@ -49,32 +49,34 @@ async function nextPage(e) {
   e.preventDefault();
   if (pages !== currentPage) {
     currentPage = currentPage + 1;
-  }
-  const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
-  const response = await fetch(URL);
-  const data = await response.json();
-  if (data.error) {
-    throw new Error(data.error);
-  }
-  const results = data.results;
-  document.getElementById("probatext").textContent = currentPage + "/" + pages;
-  showResults(results);
+    const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
+    const response = await fetch(URL);
+    const data = await response.json();
+    if (data.error) {
+      throw new Error(data.error);
+    }
+    const results = data.results;
+    document.getElementById("probatext").textContent =
+    currentPage + "/" + pages;
+    showResults(results);
+  } else return
 }
 
 async function backPage(e) {
   e.preventDefault();
-  if (currentPage > 1) {
+  if (currentPage > 1 ) {
     currentPage = currentPage - 1;
-  }
-  const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
-  const response = await fetch(URL);
-  const data = await response.json();
-  if (data.error) {
-    throw new Error(data.error);
-  }
-  const results = data.results;
-  document.getElementById("probatext").textContent = currentPage + "/" + pages;
-  showResults(results);
+     const URL = `${API_URL}${ENDING_URL}${currentPage}&name=${searchParam}`;
+     const response = await fetch(URL);
+     const data = await response.json();
+     if (data.error) {
+       throw new Error(data.error);
+     }
+     const results = data.results;
+     document.getElementById("probatext").textContent =
+     currentPage + "/" + pages;
+     showResults(results);
+  } else return
 }
 
 function showResults(results) {
@@ -84,12 +86,12 @@ function showResults(results) {
   results.map(character => {
     html += `
     <div class="card">
-      <img src="${character.image}" class="card-img-top" alt="${character.name}">
+      <img src="${character.image}" alt="${character.name}">
       <div class="card-body">
         <h5 class="card-title">${character.name}</h5>
-        <p class="card-text">${character.location.name}</p>
-        <p class="card-text">${character.species}</p>
-        <p class="card-text">${character.status}</p>
+        <p class="card-text"><span class="card-text-alt">Location: </span>${character.location.name}</p>
+        <p class="card-text"><span class="card-text-alt">Race: </span>${character.species}</p>
+        <p class="card-text"><span class="card-text-alt">Status: </span>${character.status}</p>
       </div>
     </div>
     `;

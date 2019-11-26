@@ -236,6 +236,12 @@ body {
         border-radius: 9px;
         object-fit: cover;
     }
+    &-text {
+      color: white;
+      &-alt {
+        color: grey;
+      }
+    }
 }
 
 form  {

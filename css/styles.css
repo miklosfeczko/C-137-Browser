@@ -176,6 +176,10 @@ body {
     height: auto;
     border-radius: 9px;
     object-fit: cover; }
+  .card-text {
+    color: white; }
+    .card-text-alt {
+      color: grey; }
 
 form {
   position: relative;
