@@ -289,7 +289,7 @@ input {
       font-size: 1.3rem;
       letter-spacing: .5rem;
       margin: 1rem 0;
-      margin-bottom: 2.5rem;
+      margin-bottom: 4rem;
       writing-mode: vertical-lr;
       text-orientation: sideways; }
   .titleContainer {
@@ -306,7 +306,7 @@ input {
     display: block;
     top: 36vh; }
     .rightNav ul li {
-      margin-bottom: 2.5rem; }
+      margin-bottom: 4rem; }
   .projectDetails {
     width: 100%;
     max-width: 45%;
