@@ -370,13 +370,15 @@ input {
     position: absolute;
     margin: 0;
     top: 36vh;
-
-    li {
-      font-size: 1.3rem;
-      letter-spacing: .5rem;
-      margin: 1rem 0;
-      writing-mode: vertical-lr;
-      text-orientation: sideways;
+    ul {
+      li {
+        font-size: 1.3rem;
+        letter-spacing: .5rem;
+        margin: 1rem 0;
+        margin-bottom: 2.5rem;
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+      }
     }
   }
 
@@ -400,6 +402,11 @@ input {
    .rightNav {
     display: block;
     top: 36vh;
+    ul {
+      li {
+        margin-bottom: 2.5rem;
+      }
+    }
   }
 
   .projectDetails {
