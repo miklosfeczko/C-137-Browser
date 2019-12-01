@@ -108,3 +108,12 @@ function showError(error) {
   </div>
   `;
 }
+
+function movieSelected(id) {
+  sessionStorage.setItem("characterId", id);
+  window.location = "character.html";
+  console.log('It works!', id);
+  return false
+}
+
+
