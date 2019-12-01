@@ -63,13 +63,14 @@ body {
   display: none;
   letter-spacing: .5rem;
   position: absolute;
-  right: 1.3rem; }
+  right: .3rem; }
   .rightNav ul {
     list-style: none;
     text-decoration: none; }
     .rightNav ul li {
       margin: 1rem 0;
-      writing-mode: vertical-rl; }
+      transform: rotate(90deg);
+      padding-bottom: 3rem; }
     .rightNav ul a:hover, .rightNav ul a:active {
       color: white; }
     .rightNav ul a {

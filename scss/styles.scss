@@ -87,7 +87,7 @@ body {
   display: none;
   letter-spacing: .5rem;
   position: absolute;
-  right: 1.3rem;
+  right: .3rem;
 
   ul {
     list-style: none;
@@ -95,7 +95,8 @@ body {
 
     li {
         margin: 1rem 0;
-        writing-mode: vertical-rl;
+        transform: rotate(90deg);
+        padding-bottom: 3rem;
     }
 
     a:hover, a:active {
