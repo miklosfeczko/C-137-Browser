@@ -7,7 +7,7 @@ $piggy: #eb4e7a;
   padding: 0;
   margin: 0;
   font-family: 'PT Sans Narrow', sans-serif;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 ::-moz-selection { 
@@ -146,6 +146,7 @@ body {
   width: 100%;
   flex-direction: column;
   background-color: $cosmicblue;
+  text-align: left;
 }
 
 .projectWrapper {
@@ -188,6 +189,7 @@ body {
 .techstackWrapper {
   text-decoration: none;
   height: 100%;
+  display: flex;
   align-items: left;
   justify-content: left;
   margin-bottom: 1rem;
@@ -470,7 +472,7 @@ input {
 
 @media only screen and (max-width: 346px) { // search bar fix for smaller devices.
   input {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   .btn {
   .im-magnifier {
@@ -478,7 +480,3 @@ input {
   }
   }
 }
-/* .im-magnifier { <- selector
-    font-size <- property : 0.7rem; <- value } <- declaration
-  }
-*/

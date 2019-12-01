@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: 'PT Sans Narrow', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 ::-moz-selection {
   color: white;
@@ -101,7 +101,8 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-color: #040919; }
+  background-color: #040919;
+  text-align: left; }
 
 .projectWrapper {
   display: flex;
@@ -137,6 +138,7 @@ body {
 .techstackWrapper {
   text-decoration: none;
   height: 100%;
+  display: flex;
   align-items: left;
   justify-content: left;
   margin-bottom: 1rem; }
@@ -347,11 +349,6 @@ input {
 
 @media only screen and (max-width: 346px) {
   input {
-    font-size: 1rem; }
+    font-size: .9rem; }
   .btn .im-magnifier {
     font-size: 0.7rem; } }
-
-/* .im-magnifier { <- selector
-    font-size <- property : 0.7rem; <- value } <- declaration
-  }
-*/
