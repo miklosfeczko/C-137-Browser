@@ -1,6 +1,6 @@
 # C-137 Browser
 
-## [Check live demo!](https://miklosfeczko.github.io/C-137-Browser/)
+## [Check live demo!](https://miklosfeczko.github.io/c137-browser-vanilla/)
 
 ![Thumbnail](app-screenshot.jpg)
 ![Thumbnail](app-screenshot2.jpg)
